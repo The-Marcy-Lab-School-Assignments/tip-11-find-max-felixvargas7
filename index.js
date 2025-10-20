@@ -9,8 +9,20 @@
  */
 
 const findMax = (numbers) => {
- //write your code here
+
+    let max = numbers[0];
+    let index = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > findMax) {
+            max = numbers[i];
+        }
+    }
+
+    return [max, index];
 };
+
+// let el = numbers[i]
+// let max = Math.max(el, max);
 
 // Export the function for testing
 module.exports = { findMax };
